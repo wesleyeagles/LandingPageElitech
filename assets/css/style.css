@@ -576,7 +576,7 @@ body {
         background-clip: content-box;
         text-shadow: var(--ElitechOrange) 1px 1px 25px;
         color: black!important;
-        animation: pulsate 1.5s infinite alternate;
+        animation: pulsate 1.0s infinite alternate;
         text-shadow:
             0 0 4px rgb(231, 120, 23),
             0 0 4px rgb(231, 120, 23),
