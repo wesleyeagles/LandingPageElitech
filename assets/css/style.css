@@ -21,7 +21,25 @@
 
 @font-face {
     font-family: 'GalanoBlack';
-    src: url('/assets/Rene\ Bieder\ -\ Galano\ Grotesque\ Alt\ DEMO\ Bold.otf') format('opentype');
+    src: url('/assets/GalanoGrotesqueBlack.otf') format('opentype');
+
+}
+
+@font-face {
+    font-family: 'GalanoSemiBold';
+    src: url('/assets/GalanoGrotesqueBold.otf') format('opentype');
+
+}
+
+@font-face {
+    font-family: 'GalanoLight';
+    src: url('/assets/GalanoGrotesqueLight.otf') format('opentype');
+
+}
+
+@font-face {
+    font-family: 'GalanoRegular';
+    src: url('/assets/GalanoGrotesqueRegular.otf') format('opentype');
 
 }
 
@@ -34,7 +52,7 @@
 body {
     box-sizing: border-box;
     font-family: 'Poppins'!important;
-    height: 2500px;
+    height: 100%;
     background-image: url(/assets/image/Banner\ BlackFriday-2.png);
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -283,10 +301,76 @@ body {
     font-family: GalanoBlack;
   }
 
+  .titulo-head {
+
+    display: flex;
+    justify-content: center;
+    margin-top: 35px;
+  }
+
+  .uk-accordion-title span {
+    position: absolute;
+    display: block;
+    background: var(--ElitechOrange);
+    color: #000;
+    border-radius: 50px;
+    font-size: .9rem;
+    font-weight: 700;
+    line-height: 1;
+    padding: 5px;
+    width: 16px;
+    height: 16px;
+    text-align: center;
+}
+
+
+
+.uk-accordion-title h2, .uk-accordion-title h3 {
+    color: #fff;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.4;
+}
+
+.uk-accordion-title {
+    position: relative;
+    display: block;
+    font-size: 1.25rem;
+    line-height: 1.4;
+    overflow: hidden;
+    background: #333;
+    padding: 10px
+ 25px;
+    text-align: left;
+}
+
+
+
+  .titulo-head h2 {
+
+    width: 70%;
+  }
+
   .titulo2 {
 
-    font-family: GalanoBlack;
+    font-family: GalanoRegular;
+    color: white;
+    width: 100%;
+    
   }
+
+  #regulamento p {
+
+    color: white;
+    margin-left: 15px;
+  }
+
+  .marginn {
+
+    margin-top: 150px;
+  }
+
+  
 
 
   .divisor2 h3 {
@@ -440,9 +524,13 @@ body {
         border-radius: 7px;
         overflow: hidden;
         background: var(--ElitechBlue);
-        padding: 10px
-     25px;
+        padding: 10px 25px;
         text-align: left;
+    }
+
+    .uk-accordion-title:hover {
+
+        background: var(--ElitechOrange);
     }
 
     .uk-accordion-title h2, .uk-accordion-title h3 {
@@ -459,9 +547,9 @@ body {
         content: "";
         width: 26px;
         border-radius: 20px;
-        height: 26px;
         position: relative;
-        top: 0px;
+        top: 10px;
+        height: 26px;
         margin-left: 10px;
         float: right;
         background-image: url();
@@ -503,6 +591,7 @@ body {
         padding: 30px
      0 0 0;
         color: #fff;
+        height: 260px;
     }
 
     footer .social {
@@ -723,11 +812,16 @@ body {
 
 
 
-    @media only screen and (max-width:425px) {
+    @media only screen and (max-width:428px) {
 
         .bar {
 
             width: 380px;
+        }
+
+        footer {
+
+            height: 450px;
         }
 
         .uk-container {
