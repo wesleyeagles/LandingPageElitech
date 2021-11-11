@@ -981,3 +981,11 @@ body {
             left: 380px;
         }
     }
+
+    @media only screen and (width:375px) {
+
+        .selo-div {
+
+            left: 280px;
+        }
+    }
